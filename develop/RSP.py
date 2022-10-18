@@ -47,9 +47,23 @@ while True:
                 player_count += 1
                 print(f"Player: {player_count} vs Bot: {bot_count} \n")
 
+            if i == rounds:
+
+                if player_count > bot_count:
+                    (print(f"The Player wins by winning {player_count} out of {i} Rounds!"))
+                    exit()
+                elif bot_count > player_count:
+                    (print(f"The Bot wins by winning {bot_count} out of {i} Rounds!"))
+                    exit()
+                else:
+                    print("The Game ends in a tie!")
+                    exit()
+
             i += 1
+
+
 
     except ValueError:
         print("Wrong Input, try again")
 
-    exit()
+
