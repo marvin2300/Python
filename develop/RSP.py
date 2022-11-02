@@ -10,7 +10,7 @@ while True:
 
         while i <= rounds:
             rps = (input("Choose! Rock, Paper, Scissors: \n"))
-            if rps == "Rock" or rps == "Paper" or rps == "Scissors":
+            if rps == "Rock" or rps == "Paper" or rps == "Scissors" or "exit":
                 bot = int(random.randint(1, 3))
 
                 r_psi = 0
@@ -21,6 +21,8 @@ while True:
                     r_psi = 2
                 elif rps == "Scissors":
                     r_psi = 3
+                elif rps == "exit":
+                    exit()
 
                 bot_out = ""
 
