@@ -24,7 +24,7 @@ while True:
         delta_months = t_month - month
         delta_days = t_day - day
 
-        print(delta_years, delta_months, delta_days)
+        print(f"Year: {delta_years}, Months: {delta_months}, Days: {delta_days}")
 
         exit()
 
